@@ -1,0 +1,320 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: 'Krona One', sans-serif;
+	background-size: cover;
+}
+
+body{
+	max-height: 100%;
+	display: grid;
+	grid-template-columns: 300px 1fr;
+}
+
+header{
+	background: #000000;
+	max-height: 100%;
+	grid-column: 1/2;
+	display: grid;
+	grid-template-rows: 1fr 1fr 50px;
+}
+
+.logo{
+	grid-row: 1/2;
+	align-items: center;
+}
+
+.logo img{
+	height: 1fr;
+	width: 100%;
+	transition: transform .1s;
+	object-fit: cover;
+}
+
+.logo img:hover{
+	transform: scale(1.1);
+}
+
+nav{
+	grid-row: 2/3;
+	color: white;
+}
+
+header a:link, header a:visited{
+	color: #ffffff;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+header a:hover, header a:active{
+	color: #ff5761;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+footer{
+	grid-row: 3/4;
+	color: #ffffff;
+	position: relative;
+	bottom: 0;
+}
+
+section{
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+}
+
+.hero{
+	grid-row: 1/2;
+	max-height: 100%;
+	width: 100%;
+	align-items: center;
+}
+
+sup{
+	font-size: 20px;
+}
+
+h2{
+	color: #000000;
+	font-size: 90px;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+}
+
+h4{
+	font-size: 30px;
+	line-height: 65px;
+	grid-row: 1/2;
+}
+
+
+h3 a:link, h3 a:visited{
+	background-color: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 70px;
+	color: black;
+	border: 2px black;
+	padding: 40px 80px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	-o-transition: .5s;
+	-ms-transition: .5s;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+
+h3 a:hover, h3 a:active{
+	background-color: #000000;
+	color: #ffffff;
+	border: 2px black;
+	padding: 40px 80px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.links{
+	grid-row: 2/3;
+	position: center;
+}
+
+.headline{
+	position: relative;
+	text-align: center;
+	padding:6px;
+	width:100%;
+	line-height: 150%;
+}
+
+.php{
+	color: #000000;
+	max-height: 100%;
+	grid-row: 1/3;
+}
+
+.php table, th, td{
+	height: 50px;
+	font-size: 30px;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+.php th{
+	color: #ff5761;
+}
+
+.php a:link, .php a:visited {
+	color: #000000;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.php a:hover, .php a:active {
+	color: #ff5761;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.custom-php{
+	color: #000000;
+	max-height: 100%;
+	grid-row: 2/3;
+}
+
+.custom-php table, th, td{
+	height: 50px;
+	font-size: 30px;
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+.custom-php th{
+	color: #ff5761;
+}
+
+.custom-php a:link, .custom-php a:visited {
+	color: #000000;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.custom-php a:hover, .custom-php a:active {
+	color: #ff5761;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.info{
+	height: 100%;
+	width: 100%;
+	grid-row: 1/3;
+	text-align: center;
+	font-size: 40px;
+	color: #000000;
+	line-height: 100px;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.info .name{
+	grid-row: 1/2;
+}
+
+.info .batch{
+	grid-row: 2/3;
+}
+
+.info .roll{
+	grid-row: 3/4;
+}
+
+.info .mail{
+	grid-row: 2/3;
+}
+
+/*login form css*/
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .login-form{
+        margin-top: 80%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+.btn-black{
+    background-color: #000 !important;
+	color: #fff;
+}
+
+/*CSS for About Page*/
+
+.about {
+	grid-column: 1/3;
+  	display: grid;
+	grid-template-rows: 300px 200px 300px 50vh;
+}
+
+.logo-about{
+	background-color: black;
+	grid-row: 1/2;
+	align-items: center;
+}
+
+.logo-about h4 {
+	position: absolute;
+	align-self: center;
+	width: 200px;
+	left: 50%;
+	margin-left: -100px;
+	top: 35%;
+}
+
+.logo-about img{
+	position: absolute;
+	height: 250px;
+	width: 250px;
+	left: 50%;
+    margin-left: -125px;
+	transition: transform .1s;
+	object-fit: cover;
+}
+
+.logo-about img:hover{
+	transform: scale(1.1);
+}
+
+.about-pcbldr {
+	position: relative;
+	grid-row: 2/3;
+	max-height: 100%;
+}
+
+.how-to {
+	grid-row: 3/4;
+}
+
+.life-cycle {
+	grid-row: 4/5;
+	max-height: 100%;
+}
+
+h5{
+	color: #000000;
+	font-size: 25px;
+}

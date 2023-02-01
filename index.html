@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>PCBLDR</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./media/logo.png" alt="pcbldr-logo"></a>
+        </div>
+        <nav>
+            <h4><a href="index.html">BLDR</a></h4><br>
+            <h4><a href="./php/auth.php">CUSTOM BLD</a></h4><br>
+            <h4><a href="about.html">ABOUT</a></h4><br>
+        </nav>
+        <footer>
+            &copy PCBLDR 2020.
+        </footer>
+    </header>
+
+    <section>
+        <div class="hero">
+            <h2><sup>SELECT</sup>USAGE</h2>
+        </div>
+        <div class="links">
+            <h3 class="headline"><a id="home" href="prHome.html">HOME</a></h3>
+            <h3 class="headline"><a id="gaming" href="prGaming.html">GAMING</a></h3>
+            <h3 class="headline"><a id="work" href="prWork.html">WORKSTATION</a>
+        </div>
+    </section>
+    <script src="js/gsap.min.js"></script>
+    <script type="text/javascript">
+
+        const header = document.querySelector('header');
+        const h2 = document.querySelector('h2');
+        const logo = document.querySelector('.logo');
+        const links = document.querySelector('.links');
+        const nav = document.querySelector('nav');
+
+        const tl = new TimelineMax();
+
+        tl.fromTo(header, 1.2, { y: '-100%' }, { y: '0%', ease: Power2.easeInOut })
+            .fromTo(logo, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 })
+            .fromTo(links, 0.5, { opacity: 0, x: 50 }, { opacity: 1, x: 0 })
+            .fromTo(h2, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.5')
+            .fromTo(nav, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.5')
+            .fromTo(nav, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.5');
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./js/jquery.js"></script>
+</body>
+
+</html>
